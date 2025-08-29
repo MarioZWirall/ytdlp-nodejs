@@ -24,8 +24,7 @@
     "download:ytdlp": "tsx ./src/scripts/downloadYtdlp.ts",
     "download:ffmpeg": "tsx ./src/scripts/downloadFFmepg.ts",
     "postdownload": "node ./dist/downloadYtdlp.js",
-    "postinstall": "node -e \"process.env.INIT_CWD !== process.cwd() && require('child_process').execSync('npm run postdownload', { stdio: 'inherit' });\"",
-    "prepare": "husky"
+    "postinstall": "node -e \"process.env.INIT_CWD !== process.cwd() && require('child_process').execSync('npm run postdownload', { stdio: 'inherit' });\""
   },
   "keywords": [
     "yt-dlp",
